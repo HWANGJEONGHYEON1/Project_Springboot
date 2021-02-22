@@ -39,3 +39,6 @@
 ### SessionUser
  - 세션에 사용자 정보를 저장하기 위한 DTO 클래  
  
+### LoginUser Session user
+ -  httpSession.getAttribute("user") -> @LoginUser Session user (Parameter)  
+ 

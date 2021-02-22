@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.client.userinfo.CustomUserTypesOAuth2
 
 @RequiredArgsConstructor
 @EnableWebSecurity
-public class SpringConfig extends WebSecurityConfigurerAdapter {
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final CustomOAuth2UserService customOAuth2UserService;
 
