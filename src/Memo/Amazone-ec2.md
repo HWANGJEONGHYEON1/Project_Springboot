@@ -39,7 +39,7 @@
  - sudo reboot
  - curl 등록한 호스트 명
  - Failed to connected to ~ connection refused 정상(아직 80포트로 실행된 서비스가 없음을 나타)
-   
-   
 
+# AWS RDS
+ - 생성 및 연동
  
