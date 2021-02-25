@@ -23,6 +23,6 @@ public class IndexContollerTest {
         String body = this.restTemplate.getForObject("/", String.class);
 
         //then
-        assertThat(body).contains("무스타치 템플릿엔진을 이용한 스프링 부트 웹서비스 첫 페이지");
+        assertThat(body).contains("스프링부트로 시작하는 웹 서비스");
     }
 }
