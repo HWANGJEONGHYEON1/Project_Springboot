@@ -45,4 +45,4 @@ deploy:
   notification:
     email:
       recipients:
-        - 'deert101@gmail.com'
+        - 'deert101@gmail.com' #email
