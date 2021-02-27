@@ -10,6 +10,7 @@ JPA
 Default SCM : git
 Tool : SourceTree, Intellij
 DATABASE : H2
+AWS: EC2
 ```
 
 프로젝트 
