@@ -14,7 +14,26 @@ cache:
 
 script: "./gradlew clean build"
 
+before_deploy:
+  - zip -r Project_Springboot *
+  - mkdir -p deploy
+  - mv Project_Springboot.zip deplpy/Project_Springboot.zip
+
+deploy:
+  - provider: s3
+  - access_key_id: $AWS_ACCESS_KEY
+  - secret_access_key: $AWS_SECRET_KEY
+  - bucket: jhh-freelec-springboot-build
+  - region: ap-northeast-2
+  - skip_cleanup: true
+  - acl: private
+  - local_dir: deploy
+  - wait-until-deployed: true
+
 notification:
   email:
     recipients:
       - 'deert101@gmail.com' #email
+
+# IWtKq2tHwMHZKpUbY5b8B61MfJsXQgKPEmi9EEst # 비밀 액세스키
+# AKIARBHKM5WOH5EXJLHA 엑세스
